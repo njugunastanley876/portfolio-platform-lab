@@ -1,0 +1,17 @@
+export const initialProjects = [
+  {
+    id: 1,
+    title: "project",
+    description: "function of the project",
+  },
+  {
+    id: 2,
+    title: "project 2",
+    description: "function of the project",
+  },
+  {
+    id: 3,
+    title: "project 3",
+    description: "function of the project",
+  },
+];
