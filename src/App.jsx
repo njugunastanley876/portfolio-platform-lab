@@ -11,9 +11,12 @@ function App() {
 const handleAddProject = (newProject) => {
   setWorks([newProject, ...works]);
 };
-const filteredWorks = works.filter((work) =>
-  work.title.toLowerCase().includes(searchQuery.toLowerCase())
-);
+const filteredWorks = works.filter((work) => {
+  const query = searchQuery.toLowerCase();
+  const title = (work.title || '').toLowerCase();
+  const description = (work.description || '').toLowerCase();
+  return title.includes(query) || description.includes(query);
+});
 
 return (
   <div className="container py-5">

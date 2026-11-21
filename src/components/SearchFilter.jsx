@@ -8,7 +8,7 @@ function SearchFilter({ searchQuery, onSearchChange }) {
             className="form-control form-control-lg shadow-sm"
             placeholder="search projects"
             value={searchQuery}
-            onchange={(e) => onSearchChange(e.target.value)}
+            onChange={(e) => onSearchChange(e.target.value)}
             />
         </div>
     );
